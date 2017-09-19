@@ -10,10 +10,10 @@ void main()
 	if(i>=1000) t=4;
 	switch(t)
 	{
-	case 1:cout<<i<<"<10\n";break;
-	case 2:cout<<"10≤"<<i<<"≤99\n";break;
-	case 3:cout<<"100≤"<<i<<"≤999\n";break;
-	case 4:cout<<i<<"≥1000\n";
+	case 1:cout<<"小于10\n";break;
+	case 2:cout<<"10~99\n";break;
+	case 3:cout<<"100~999\n";break;
+	case 4:cout<<"1000以上\n";
 	
 	}
 
