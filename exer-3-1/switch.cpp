@@ -1,20 +1,23 @@
 #include<iostream.h>
 void main()
 {
-	int i,t;
+	int i;
 	cout<<"Please input i:";
 	cin>>i;
-	if(i<10) t=1;
-	if(i>=10&&i<=99) t=2;
-	if(i>=100&&i<=999) t=3;
-	if(i>=1000) t=4;
-	switch(t)
+	switch(i/10)
 	{
-	case 1:cout<<"小于10\n";break;
-	case 2:cout<<"10~99\n";break;
-	case 3:cout<<"100~999\n";break;
-	case 4:cout<<"1000以上\n";
-	
+	case 0:cout<<"小于10\n";break;
+		default:
+		switch(i/100)
+		{
+		case 0:cout<<"10~99\n";break;
+		    default:
+	        switch(i/1000)
+			{
+	        case 0:cout<<"100~999\n";break;
+	        default:cout<<"1000以上\n";
+	}
+	}
 	}
 
 
