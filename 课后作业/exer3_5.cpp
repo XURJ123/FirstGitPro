@@ -3,7 +3,7 @@
 void main()
 {
 	float a,b,c,i,s;
-	cout<<"请输入一个三个数:";
+	cout<<"请输入一个三位数:";
 	cin>>a>>b>>c;
 	if(a+b>c&&a+c>b&&b+c>a)
 	{
