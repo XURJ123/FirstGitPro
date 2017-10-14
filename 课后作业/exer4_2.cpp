@@ -2,8 +2,7 @@
 void main()
 {
 	int year,i,sum,leap;
-	sum=0;
-	for(year=2000,i=0;year<=3000;year++)
+	for(year=2000,i=0,sum=0;year<=3000;year++)
 	{		
 		if(year%400==0)
 			leap=1;
