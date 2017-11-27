@@ -1,0 +1,41 @@
+#include<iostream.h>
+#include<iomanip.h>
+void main()
+{
+	int i,j,sum=0;
+	int a[4][4];
+	cout<<"请输入16个数:";
+	for(i=0;i<4;i++)
+	{
+		for(j=0;j<4;j++)
+			cin>>a[i][j];
+	}
+	cout<<"原矩阵:"<<endl;
+	for(i=0;i<4;i++)
+	{
+		for(j=0;j<4;j++)
+			cout<<setw(5)<<a[i][j];
+			cout<<"\n";
+	}
+	for(i=0;i<4;i++)
+	{
+		for(j=0;j<4;j++)
+			if(i==j)
+				sum+=a[i][j];
+	}
+	cout<<"主对角线元素之和为:"<<sum<<endl;
+	cout<<"新的矩阵:"<<endl;
+	for(i=0;i<4;i++)
+		for(j=0;j<4;j++)
+			if(i<j)
+				a[i][j]+=1;
+			else
+				if(i>j)
+				a[i][j]-=1;
+				for(i=0;i<4;i++)
+				{
+					for(j=0;j<4;j++)
+						cout<<setw(5)<<a[i][j];
+				    	cout<<"\n";
+				}
+}
